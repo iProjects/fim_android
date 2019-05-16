@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/crud_constraintlayouttheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<ScrollView
+		android:scrollbars="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+    <LinearLayout 
+        style="@style/crud_parentlayouttheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditmanufacturerid"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditmanufacturerid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <EditText
+                android:id="@+id/txteditmanufacturerid"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditmanufactureridhint"
+                android:inputType="textAutoComplete"
+				android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditmanufacturername"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditmanufacturername"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <EditText
+                android:id="@+id/txteditmanufacturername"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditmanufacturernamehint"
+                android:inputType="textAutoComplete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditmanufacturerstatus"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditmanufacturerstatus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Spinner
+                android:id="@+id/cbocreatestatus"
+                style="@style/crud_spinner_theme" />
+  
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_buttons_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btndeletemanufacturer"
+                android:text="@string/btndeletemanufacturer"
+                style="@style/deletecrudbuttonstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+				android:icon="@drawable/delete"
+				android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <ImageButton
+                android:id="@+id/imgbtndeletemanufacturer"
+                style="@style/deletecrudimagetheme"
+                android:contentDescription="@string/imagecontentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblerrormsg"
+                style="@style/lblerrormsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblerrormsg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+ 
+        </LinearLayout>
+
+    </LinearLayout>
+
+ </ScrollView>
+ 
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+

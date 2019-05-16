@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mediumTextStyle" format="reference" />
+    <attr name="largeTextStyle" format="reference" />
+    <attr name="custom_red" format="color" />
+    <attr name="custom_blue" format="color" />
+    <attr name="custom_green" format="color" />
+    <attr name="custom_redish" format="color" />
+    <attr name="custom_blueish" format="color" />
+    <attr name="custom_greenish" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="colorAccent" format="color" />
+    <declare-styleable name="EditTextWithDrawable">
+        <attr name="c_e_d_drawableRightSVG" format="reference" />
+        <attr name="c_e_d_hint" format="string" />
+        <attr name="c_e_d_textSize" format="dimension" />
+        <attr name="c_e_d_textColor" format="color" />
+    </declare-styleable>
+
+</resources>
+

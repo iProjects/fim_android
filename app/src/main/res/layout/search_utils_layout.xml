@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/constraintlayouttheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/parentlayouttheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:background="@color/transparent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/cbosearchrecord"
+                style="@style/crud_spinner_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spinnerheight"
+                android:layout_margin="@dimen/list_row_labels_margin"
+                android:layout_weight="1"
+                android:background="@color/main_buttons_backgroundcolor"
+                android:dropDownSelector="@drawable/eclipse"
+                android:dropDownWidth="match_parent"
+                android:minHeight="@dimen/dropdownminheight"
+                android:padding="@dimen/list_row_labels_vertical_margin"
+                android:popupBackground="@drawable/eclipse"
+                android:popupElevation="@dimen/popup_Elevation"
+                android:popupTheme="@style/search_spinner_popup_theme"
+                android:spinnerMode="dialog"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/list_row_labels_theme_foregroundcolor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txtautocompleterecord"
+                style="@style/autocompletetextviewtheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:completionThreshold="1"
+                android:enabled="true"
+                android:hint="@string/search_hint_text"
+                android:singleLine="true"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbarsearch"
+            style="@style/progressBarsplashtheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:theme="@style/Widget.AppCompat.ProgressBar"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            style="@style/searchfragmentcontainertheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+

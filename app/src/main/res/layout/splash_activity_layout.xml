@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/activity_splash"
+		style="@style/splashcontainertheme"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/splash_vertical_margin"
+		android:paddingLeft="@dimen/splash_horizontal_margin"
+		android:paddingRight="@dimen/splash_horizontal_margin"
+		android:paddingTop="@dimen/splash_vertical_margin"
+		tools:context="com.tech.nyax.myapplication10.Splash">
+
+			<ProgressBar
+				android:id="@+id/progressBarsplash"
+				android:theme="@style/Widget.AppCompat.ProgressBar"
+				style="@style/progressBarsplashtheme"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:indeterminate="true"/>
+
+			<TextView
+				android:id="@+id/lbltimer"
+				style="@style/lbltimer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/lbltimer" />
+
+			<TextView
+				android:id="@+id/lblcounta"
+				style="@style/splashlblsysipaddresstheme"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/lblsysipaddress" />
+
+			<TextView
+				android:id="@+id/lblsplashprogressinfo"
+				style="@style/splashlblprogressinfotheme"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/lblsplashprogressinfo" />
+				
+			<ImageView
+				android:id="@+id/imgsplashloader"
+				style="@style/splashimgtheme"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:contentDescription="@string/imagecontentDescription"
+				android:src="@drawable/background"
+				android:tintMode="screen"
+				android:visibility="visible" />
+
+	</LinearLayout>
+
+ </ScrollView>
+ 
+ 
+ 

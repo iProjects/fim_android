@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/crud_constraintlayouttheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<ScrollView
+		android:scrollbars="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+    <LinearLayout 
+        style="@style/crud_parentlayouttheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticideid"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticideid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <EditText
+                android:id="@+id/txteditpestinsecticideid"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditpestinsecticideidhint"
+                android:inputType="textAutoComplete"
+				android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticidename"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticidename"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <EditText
+                android:id="@+id/txteditpestinsecticidename"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditpestinsecticidenamehint"
+                android:inputType="textAutoComplete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticidecategory"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticidecategory"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Spinner
+                android:id="@+id/cbopestinsecticidecategory"
+                style="@style/crud_spinner_theme" />
+  
+            <EditText
+                android:id="@+id/txteditpestinsecticidecategory"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditpestinsecticidecategoryhint"
+                android:inputType="textAutoComplete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticidemanufacturer"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticidemanufacturer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Spinner
+                android:id="@+id/cbopestinsecticidemanufacturer"
+                style="@style/crud_spinner_theme" />
+  
+            <EditText
+                android:id="@+id/txteditpestinsecticidemanufacturer"
+                style="@style/crudtextboxtheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txteditpestinsecticidemanufacturerhint"
+                android:inputType="textAutoComplete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticidediseasepest"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticidediseasepest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+			<Spinner
+                android:id="@+id/cbodiseasepest"
+                style="@style/crud_spinner_theme" />
+				
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbleditpestinsecticidestatus"
+                style="@style/crudlabelstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbleditpestinsecticidestatus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Spinner
+                android:id="@+id/cbocreatestatus"
+                style="@style/crud_spinner_theme" />
+  
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_buttons_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnupdatepestinsecticide"
+                style="@style/updatecrudbuttonstheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnupdatepestinsecticide" 
+                android:icon="@drawable/edit"
+				android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <ImageButton
+                android:id="@+id/imgbtnupdatepestinsecticide"
+                style="@style/editcrudimagetheme"
+                android:contentDescription="@string/imagecontentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crud_controls_layout_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblerrormsg"
+                style="@style/lblerrormsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblerrormsg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+ 
+        </LinearLayout>
+
+    </LinearLayout>
+
+ </ScrollView>
+ 
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+

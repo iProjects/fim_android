@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="network_use_dhcp">true</bool>
+    <bool name="boot_event_default_value">true</bool>
+    <bool name="server_ip_address_persistent">true</bool>
+    <bool name="server_port_number_persistent">true</bool>
+    <bool name="wifi_persistent">true</bool>
+    <bool name="bluetooth_persistent">true</bool>
+    <bool name="finger_print_persistent">true</bool>
+    <bool name="camera_persistent">true</bool>
+	<bool name="game_persistent">true</bool>
+    <bool name="game_default_value">true</bool>
+    <bool name="wifi_default_value">true</bool>
+    <bool name="bluetooth_default_value">true</bool>
+    <bool name="finger_print_default_value">true</bool>
+    <bool name="camera_default_value">true</bool>
+    <bool name="boot_event_persistent">true</bool>
+	<bool name="fetch_update_default_value">true</bool>
+	<bool name="fetch_update_persistent">true</bool>
+
+</resources>
+

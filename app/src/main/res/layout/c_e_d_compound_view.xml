@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingEnd="40dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="40dp"
+        android:paddingStart="5dp" />
+    <!--make sure you are not using ImageView instead of this-->
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/drawbleRight_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+	android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtcropid"
+            style="@style/list_row_labels_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/txtcropidhint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/txtcropname"
+            style="@style/list_row_labels_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/txtcropnamehint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+        <TextView
+            android:id="@+id/txtcropstatus"
+            style="@style/list_row_labels_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/txtcropstatushint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+		android:layout_gravity="end"
+		android:gravity="end"
+        android:layout_weight="1" >
+
+		<ImageButton
+			android:id="@+id/btneditcrop"
+			style="@style/editcrudimagetheme"
+			android:contentDescription="@string/imagecontentDescription" />
+
+		<ImageButton
+			android:id="@+id/btndeletecrop"
+			style="@style/deletecrudimagetheme"
+			android:contentDescription="@string/imagecontentDescription" />
+
+    </LinearLayout>
+
+</LinearLayout>

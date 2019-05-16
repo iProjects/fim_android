@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/crud_constraintlayouttheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/globalactivitylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+				
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+				<ImageView
+				android:id="@+id/imgbluetoothstatus"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/imagecontentDescription"
+				android:src="@drawable/inactive"/>
+
+				<ProgressBar
+				android:id="@+id/progressBarsplash"
+				android:theme="@style/Widget.AppCompat.ProgressBar"
+				style="@style/progressBarsplashtheme"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:indeterminate="true"/>
+
+		</LinearLayout>
+
+        <Button
+            android:id="@+id/btnenablebluetooth"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnenablebluetooth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+	 
+        <Button
+            android:id="@+id/btnmakebluetoothdiscoverable"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnmakebluetoothdiscoverable"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+	 
+        <Button
+            android:id="@+id/btnscanbluetooth"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnscanbluetooth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+        <Button
+            android:id="@+id/btndiscovernearbydevices"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btndiscovernearbydevices"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+        <Button
+            android:id="@+id/btnconnect_to_bluetooth_device"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnconnect_to_bluetooth_device"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+        <Button
+            android:id="@+id/btnsend_data_to_bluetooth_divice"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnsend_data_to_bluetooth_divice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+        <Button
+            android:id="@+id/btnreceive_data_to_bluetooth_divice"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/btnreceive_data_to_bluetooth_divice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+ 
+		<TextView
+			android:id="@+id/txtbluetoothinfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/txtbluetoothinfo" 
+			style="@style/crudlabelstheme"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintBottom_toTopOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.1" />
+
+    </LinearLayout>
+
+ </ScrollView>
+ 
+</android.support.constraint.ConstraintLayout>

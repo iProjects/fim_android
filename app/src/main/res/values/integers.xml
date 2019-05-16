@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max">100</integer>
+    <integer name="actionBarSize">100</integer>
+	<integer name="spinnerwidthheight">100</integer>
+	
+	<dimen name="dialogmaxlines">1</dimen>
+
+</resources>

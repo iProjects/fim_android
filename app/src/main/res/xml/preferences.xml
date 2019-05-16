@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="General options">
+        <SwitchPreference
+            android:defaultValue="@bool/wifi_default_value"
+            android:key="@string/wifi_key"
+            android:persistent="@bool/wifi_persistent"
+            android:summary="@string/wifi_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/wifi_title" /> 
+        <SwitchPreference
+            android:defaultValue="@bool/bluetooth_default_value"
+            android:key="@string/bluetooth_key"
+            android:persistent="@bool/bluetooth_persistent"
+            android:summary="@string/bluetooth_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/bluetooth_title" /> 
+        <SwitchPreference
+            android:defaultValue="@bool/finger_print_default_value"
+            android:key="@string/finger_print_key"
+            android:persistent="@bool/finger_print_persistent"
+            android:summary="@string/finger_print_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/finger_print_title" /> 
+        <SwitchPreference
+            android:defaultValue="@bool/camera_default_value"
+            android:key="@string/camera_key"
+            android:persistent="@bool/camera_persistent"
+            android:summary="@string/camera_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/camera_title" /> 
+		<SwitchPreference
+            android:defaultValue="@bool/game_default_value"
+            android:key="@string/game_key"
+            android:persistent="@bool/game_persistent"
+            android:summary="@string/game_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/game_title" /> 
+        <EditTextPreference
+            android:defaultValue="@string/server_ip_address_default_value"
+            android:dialogTitle="@string/server_ip_address_dialog_title"
+            android:key="@string/server_ip_address_key"
+            android:persistent="@bool/server_ip_address_persistent"
+            android:summary="@string/server_ip_address_summary"
+            android:title="@string/server_ip_address_title" />
+        <EditTextPreference
+            android:defaultValue="@string/server_port_number_default_value"
+            android:dialogTitle="@string/server_port_number_dialog_title"
+            android:key="@string/server_port_number_key"
+            android:persistent="@bool/server_port_number_persistent"
+            android:summary="@string/server_port_number_summary"
+            android:title="@string/server_port_number_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/boot_event_default_value"
+            android:key="@string/boot_event_key"
+            android:persistent="@bool/boot_event_persistent"
+            android:summary="@string/boot_event_summary"
+            android:title="@string/boot_event_title" />
+        <!-- <EditTextPreference
+            android:defaultValue="/sdcard/data/dcim/photos"
+            android:dialogTitle="Enter directory path (eg. /sdcard/data/)"
+            android:key="back_up_datastore_storage_location"
+            android:summary="Enter the directory path where you want to back up the datastore. If it does not exist, it will be created."
+            android:title="back up the datastore storage location" /> -->
+        <SwitchPreference
+            android:defaultValue="@bool/fetch_update_default_value"
+            android:key="@string/fetch_update_key"
+            android:persistent="@bool/fetch_update_persistent"
+            android:summary="@string/fetch_update_summary"
+            android:switchTextOff="No"
+            android:switchTextOn="Yes"
+            android:title="@string/fetch_update_title" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+

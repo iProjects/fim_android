@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="splash_images">
+        <item>@drawable/spash_img_1</item>
+        <item>@drawable/spash_img_2</item>
+        <item>@drawable/spash_img_3</item>
+        <item>@drawable/spash_img_4</item>
+    </array>
+	<array name="uuids">
+        <item>00001101-0000-1000-8000-00805F9B34FB</item>
+        <item>00002902-0000-1000-8000-00805F9B34FB</item>
+    </array>
+</resources>
+

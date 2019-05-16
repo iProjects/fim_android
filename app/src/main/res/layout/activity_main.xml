@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/constraintlayouttheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/mainactivitylayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1">
+
+            <Button
+                android:id="@+id/btnsearch"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnsearch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btncropslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btncropslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btnmanufacturerslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnmanufacturerslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btncropsvarietieslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btncropsvarietieslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btncropsdiseaseslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btncropsdiseaseslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btncategorieslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btncategorieslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btnpestsinsecticideslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnpestsinsecticideslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btnsettingslist"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnsettingslist"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btndatabaseutils"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btndatabaseutils"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btnexit"
+                style="@style/mainactivitybuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btnexit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <ViewFlipper
+                android:id="@+id/viewflip"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
+
