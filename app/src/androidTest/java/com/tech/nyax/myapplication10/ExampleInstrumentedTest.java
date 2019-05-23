@@ -24,3 +24,19 @@ public class ExampleInstrumentedTest {
         assertEquals("com.tech.nyax.myapplication10", appContext.getPackageName());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
